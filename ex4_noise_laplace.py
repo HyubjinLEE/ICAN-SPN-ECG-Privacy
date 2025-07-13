@@ -80,7 +80,7 @@ if __name__ == "__main__":
     data_loader = ECGDataLoader(data_path="data/mitdb/", segment_length=SEG_LENGTH*360)
     model = ICAN(feature_dim=FEATURE_DIM, d_k=D_K, num_patients=NUM_PATIENTS, num_classes=NUM_CLASSES).to(DEVICE)
 
-    laplace_scales = [0, 0.1, 0.2, 0.5, 1, 2, 5, 10]
+    laplace_scales = [0, 0.1, 0.2, 0.5, 1, 2, 5, 10, 20000, 50000, 100000]
 
     all_id_accs = {scale: [] for scale in laplace_scales}
     all_class_accs = {scale: [] for scale in laplace_scales}
