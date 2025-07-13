@@ -2,7 +2,7 @@ import os
 import torch
 from torch.utils.data import DataLoader, TensorDataset
 from model_ICAN import ICAN
-from model_SPN_ablation import SPN
+from ex8_model_SPN_ablation import SPN
 from data_loader import ECGDataLoader
 from sklearn.metrics import accuracy_score
 
