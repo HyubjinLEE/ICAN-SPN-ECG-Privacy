@@ -168,7 +168,7 @@ def plot_metrics_comparison(ican_metrics, spn_metrics):
     spn_acc = spn_metrics['accuracy'] * 100
     
     bars1 = plt.bar(x - width/2, ican_acc, width, label='ICAN', color="skyblue")
-    bars2 = plt.bar(x + width/2, spn_acc, width, label='ICAN (with SPN noise)', color="lightcoral", hatch='//')
+    bars2 = plt.bar(x + width/2, spn_acc, width, label='ICAN with SPN noise', color="lightcoral", hatch='//')
     
     for bars in [bars1, bars2]:
         for bar in bars:
@@ -191,7 +191,7 @@ def plot_metrics_comparison(ican_metrics, spn_metrics):
     spn_prec = spn_metrics['precision'] * 100
     
     bars1 = plt.bar(x - width/2, ican_prec, width, label='ICAN', color="skyblue")
-    bars2 = plt.bar(x + width/2, spn_prec, width, label='ICAN (with SPN noise)', color="lightcoral", hatch='//')
+    bars2 = plt.bar(x + width/2, spn_prec, width, label='ICAN with SPN noise', color="lightcoral", hatch='//')
     
     for bars in [bars1, bars2]:
         for bar in bars:
@@ -214,7 +214,7 @@ def plot_metrics_comparison(ican_metrics, spn_metrics):
     spn_sens = spn_metrics['sensitivity'] * 100
     
     bars1 = plt.bar(x - width/2, ican_sens, width, label='ICAN', color="skyblue")
-    bars2 = plt.bar(x + width/2, spn_sens, width, label='ICAN (with SPN noise)', color="lightcoral", hatch='//')
+    bars2 = plt.bar(x + width/2, spn_sens, width, label='ICAN with SPN noise', color="lightcoral", hatch='//')
     
     for bars in [bars1, bars2]:
         for bar in bars:
@@ -237,7 +237,7 @@ def plot_metrics_comparison(ican_metrics, spn_metrics):
     spn_spec = spn_metrics['specificity'] * 100
     
     bars1 = plt.bar(x - width/2, ican_spec, width, label='ICAN', color="skyblue")
-    bars2 = plt.bar(x + width/2, spn_spec, width, label='ICAN (with SPN noise)', color="lightcoral", hatch='//')
+    bars2 = plt.bar(x + width/2, spn_spec, width, label='ICAN with SPN noise', color="lightcoral", hatch='//')
     
     for bars in [bars1, bars2]:
         for bar in bars:
@@ -260,7 +260,7 @@ def plot_metrics_comparison(ican_metrics, spn_metrics):
     spn_f1 = spn_metrics['f1'] * 100
     
     bars1 = plt.bar(x - width/2, ican_f1, width, label='ICAN', color="skyblue")
-    bars2 = plt.bar(x + width/2, spn_f1, width, label='ICAN (with SPN noise)', color="lightcoral", hatch='//')
+    bars2 = plt.bar(x + width/2, spn_f1, width, label='ICAN with SPN noise', color="lightcoral", hatch='//')
     
     for bars in [bars1, bars2]:
         for bar in bars:
@@ -298,7 +298,7 @@ def plot_metrics_comparison(ican_metrics, spn_metrics):
     x_macro = np.arange(len(metrics_names))
     
     bars1 = plt.bar(x_macro - width/2, ican_macro, width, label='ICAN', color="skyblue")
-    bars2 = plt.bar(x_macro + width/2, spn_macro, width, label='ICAN (with SPN noise)', color="lightcoral", hatch='//')
+    bars2 = plt.bar(x_macro + width/2, spn_macro, width, label='ICAN with SPN noise', color="lightcoral", hatch='//')
     
     for bars in [bars1, bars2]:
         for bar in bars:
